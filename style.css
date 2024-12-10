@@ -1,0 +1,139 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f7;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #e0f2f7;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #2196f3;
+}
+
+.gif-sau-tieu-de {
+    display: block;
+    margin: 0 auto 10px;
+    max-width: 200px;
+}
+
+.slogan {
+    font-family: 'Alex Brush', cursive;
+    font-style: italic;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+main {
+    padding: 20px;
+}
+
+.gioi-thieu {
+    font-style: italic;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #000;
+}
+
+header img {
+    display: block;  /* Để áp dụng margin: auto */
+    margin: 0 auto;  /* Căn giữa ảnh */
+    max-width: 100%; /* Ảnh sẽ không lớn hơn container cha */
+    height: auto;    /* Chiều cao tự động điều chỉnh theo tỷ lệ */
+}
+
+.noi-bat h2, .danh-sach h2 {
+    font-size: 1.8em;
+    color: #2196f3;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.grid-item {
+    border: 1px solid #b3e5fc;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+}
+
+.grid-item iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.danh-sach ul {
+    list-style: none;
+    padding: 0;
+}
+
+.danh-sach li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    border-bottom: 1px solid #b3e5fc;
+    padding-bottom: 5px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.danh-sach li::before {
+    content: "\1F3B5";
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.danh-sach li:hover {
+    background-color: #b3e5fc;
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
+.gif-giua-cac-phan {
+    display: block;
+    margin: 30px auto;
+    max-width: 300px;
+}
+
+
+footer {
+    background-color: #e0f2f7;
+    padding: 10px;
+    text-align: left;
+}
+
+.thong-tin-nhom {
+    font-size: 0.8em;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
